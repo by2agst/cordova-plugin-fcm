@@ -13,7 +13,7 @@
 ## Installation
 Make sure you have ‘google-services.json’ for Android or  ‘GoogleService-Info.plist’ for iOS in your Cordova project root folder. You don´t need to configure anything else in order to have push notification working for both platforms, everything is magic.
 ```Bash
-cordova plugin add cordova-plugin-fcm
+cordova plugin add https://github.com/by2agst/cordova-plugin-fcm
 
 ```
 
@@ -34,7 +34,7 @@ Put the downloaded file 'GoogleService-Info.plist' in the Cordova project root f
 
 ## Usage
 
-:warning: It's highly recommended to use REST API to send push notifications because Firebase console does not have all the functionalities. **Pay attention to the payload example in order to use the plugin properly**.  
+:warning: It's highly recommended to use REST API to send push notifications because Firebase console does not have all the functionalities. **Pay attention to the payload example in order to use the plugin properly**.
 You can also test your notifications with the free testing server: https://cordova-plugin-fcm.appspot.com
 
 #### Receiving Token Refresh
@@ -90,7 +90,7 @@ FCMPlugin.onNotification(function(data){
 ```
 
 #### Send notification. Payload example (REST API)
-Full documentation: https://firebase.google.com/docs/cloud-messaging/http-server-ref  
+Full documentation: https://firebase.google.com/docs/cloud-messaging/http-server-ref
 Free testing server: https://cordova-plugin-fcm.appspot.com
 ```javascript
 //POST: https://fcm.googleapis.com/fcm/send
